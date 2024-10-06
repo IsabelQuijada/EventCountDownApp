@@ -35,16 +35,6 @@
 			path = "Event Countdown";
 			sourceTree = "<group>";
 		};
-		90EE636B2CB2DABF00BC0E9E /* Event CountdownTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "Event CountdownTests";
-			sourceTree = "<group>";
-		};
-		90EE63752CB2DABF00BC0E9E /* Event CountdownUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "Event CountdownUITests";
-			sourceTree = "<group>";
-		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,8 +66,6 @@
 			isa = PBXGroup;
 			children = (
 				90EE635A2CB2DABE00BC0E9E /* Event Countdown */,
-				90EE636B2CB2DABF00BC0E9E /* Event CountdownTests */,
-				90EE63752CB2DABF00BC0E9E /* Event CountdownUITests */,
 				90EE63592CB2DABE00BC0E9E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -130,9 +118,6 @@
 			dependencies = (
 				90EE636A2CB2DABF00BC0E9E /* PBXTargetDependency */,
 			);
-			fileSystemSynchronizedGroups = (
-				90EE636B2CB2DABF00BC0E9E /* Event CountdownTests */,
-			);
 			name = "Event CountdownTests";
 			packageProductDependencies = (
 			);
@@ -152,9 +137,6 @@
 			);
 			dependencies = (
 				90EE63742CB2DABF00BC0E9E /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				90EE63752CB2DABF00BC0E9E /* Event CountdownUITests */,
 			);
 			name = "Event CountdownUITests";
 			packageProductDependencies = (
