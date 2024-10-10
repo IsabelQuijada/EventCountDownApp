@@ -19,16 +19,13 @@ struct EventsView: View {
     @State private var isPresentingForm = false
     @State private var selectedEvent: Event?
     @State private var formMode: FormMode = .add
+    @State private var path = NavigationPath()
 
     var body: some View {
-        NavigationStack {
+        NavigationStack(path: $path) {
             List {
                 ForEach(events) { event in
-                    Button(action: {
-                        selectedEvent = event
-                        formMode = .edit(event)
-                        isPresentingForm = true
-                    }) {
+                    NavigationLink(value: event){
                         EventRow(event: event)
                     }
                 }
@@ -60,9 +57,19 @@ struct EventsView: View {
                     }
                 }
             }
-        }
-    }
-
+            .navigationDestination(for: Event.self) { event in
+                          EventForm(mode: .edit(event)) { updatedEvent in
+                              if let index = events.firstIndex(where: { $0.id == event.id }) {
+                                  events[index] = updatedEvent
+                                  events.sort()
+                              }
+                              path.removeLast()
+                          }
+                      }
+                  }
+              }
+    
+    
     private func deleteEvent(at offsets: IndexSet) {
         events.remove(atOffsets: offsets)
     }
