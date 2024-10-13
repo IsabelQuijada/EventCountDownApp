@@ -17,7 +17,8 @@ struct EventForm: View {
     @State private var date: Date = Date()
     @State private var textColor: Color = .black
     @State private var showAlert = false
-
+    
+    @Binding var isPresentingForm: Bool
     var mode: FormMode
     var onSave: (Event) -> Void
     
@@ -43,6 +44,13 @@ struct EventForm: View {
         }
         .navigationTitle(mode == .add ? "Add Event" : "Edit \(eventTitle)")
         .toolbar {
+
+            ToolbarItem(placement: .navigationBarLeading) {
+                Button("Cancel") {
+                    isPresentingForm = false
+                }
+            }
+            
             ToolbarItem(placement: .navigationBarTrailing) {
                 Button("Save") {
                     if title.isEmpty {
@@ -54,6 +62,7 @@ struct EventForm: View {
                 .disabled(title.isEmpty)
             }
         }
+
         .alert(isPresented: $showAlert) {
             Alert(title: Text("Invalid Title"), message: Text("Please enter a title for the event."), dismissButton: .default(Text("OK")))
         }
@@ -76,5 +85,5 @@ struct EventForm: View {
 }
 
 #Preview {
-    EventForm(mode: .add, onSave: { _ in })
+    EventForm(isPresentingForm: .constant(true), mode: .add, onSave: { _ in })
 }

@@ -44,7 +44,7 @@ struct EventsView: View {
             }
             .sheet(isPresented: $isPresentingForm) {
                 NavigationStack {
-                    EventForm(mode: formMode) { newEvent in
+                    EventForm(isPresentingForm: $isPresentingForm, mode: formMode) { newEvent in
                         if case .edit(let oldEvent) = formMode {
                             if let index = events.firstIndex(where: { $0.id == oldEvent.id }) {
                                 events[index] = newEvent
@@ -58,7 +58,7 @@ struct EventsView: View {
                 }
             }
             .navigationDestination(for: Event.self) { event in
-                          EventForm(mode: .edit(event)) { updatedEvent in
+                EventForm(isPresentingForm: $isPresentingForm, mode: .edit(event)) { updatedEvent in
                               if let index = events.firstIndex(where: { $0.id == event.id }) {
                                   events[index] = updatedEvent
                                   events.sort()
