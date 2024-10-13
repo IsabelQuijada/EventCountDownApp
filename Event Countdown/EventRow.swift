@@ -46,7 +46,7 @@ class TimerManager: ObservableObject {
     
     func start() {
         stop()
-        timer = Timer.scheduledTimer(withTimeInterval: 60.0, repeats: true) { _ in
+        timer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { _ in
             self.currentDate = Date()
         }
     }
