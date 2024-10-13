@@ -20,6 +20,13 @@ struct EventForm: View {
 
     var mode: FormMode
     var onSave: (Event) -> Void
+    
+    var eventTitle: String {
+        if case .edit(let event) = mode {
+            return event.title
+        }
+        return ""
+    }
 
     var body: some View {
         Form {
@@ -34,7 +41,7 @@ struct EventForm: View {
         .onAppear {
             setupFormForEditing()
         }
-        .navigationTitle(mode == .add ? "Add Event" : "Edit Event")
+        .navigationTitle(mode == .add ? "Add Event" : "Edit \(eventTitle)")
         .toolbar {
             ToolbarItem(placement: .navigationBarTrailing) {
                 Button("Save") {
