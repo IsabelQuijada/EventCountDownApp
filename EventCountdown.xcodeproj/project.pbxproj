@@ -24,15 +24,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		90EE63582CB2DABE00BC0E9E /* Event Countdown.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Event Countdown.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		90EE63682CB2DABF00BC0E9E /* Event CountdownTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Event CountdownTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		90EE63722CB2DABF00BC0E9E /* Event CountdownUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Event CountdownUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		90EE63582CB2DABE00BC0E9E /* EventCountdown.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EventCountdown.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		90EE63682CB2DABF00BC0E9E /* EventCountdownTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EventCountdownTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		90EE63722CB2DABF00BC0E9E /* EventCountdownUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EventCountdownUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		90EE635A2CB2DABE00BC0E9E /* Event Countdown */ = {
+		90EE635A2CB2DABE00BC0E9E /* EventCountdown */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "Event Countdown";
+			path = EventCountdown;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -65,7 +65,7 @@
 		90EE634F2CB2DABE00BC0E9E = {
 			isa = PBXGroup;
 			children = (
-				90EE635A2CB2DABE00BC0E9E /* Event Countdown */,
+				90EE635A2CB2DABE00BC0E9E /* EventCountdown */,
 				90EE63592CB2DABE00BC0E9E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -73,9 +73,9 @@
 		90EE63592CB2DABE00BC0E9E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				90EE63582CB2DABE00BC0E9E /* Event Countdown.app */,
-				90EE63682CB2DABF00BC0E9E /* Event CountdownTests.xctest */,
-				90EE63722CB2DABF00BC0E9E /* Event CountdownUITests.xctest */,
+				90EE63582CB2DABE00BC0E9E /* EventCountdown.app */,
+				90EE63682CB2DABF00BC0E9E /* EventCountdownTests.xctest */,
+				90EE63722CB2DABF00BC0E9E /* EventCountdownUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -83,9 +83,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		90EE63572CB2DABE00BC0E9E /* Event Countdown */ = {
+		90EE63572CB2DABE00BC0E9E /* EventCountdown */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 90EE637C2CB2DABF00BC0E9E /* Build configuration list for PBXNativeTarget "Event Countdown" */;
+			buildConfigurationList = 90EE637C2CB2DABF00BC0E9E /* Build configuration list for PBXNativeTarget "EventCountdown" */;
 			buildPhases = (
 				90EE63542CB2DABE00BC0E9E /* Sources */,
 				90EE63552CB2DABE00BC0E9E /* Frameworks */,
@@ -96,18 +96,18 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				90EE635A2CB2DABE00BC0E9E /* Event Countdown */,
+				90EE635A2CB2DABE00BC0E9E /* EventCountdown */,
 			);
-			name = "Event Countdown";
+			name = EventCountdown;
 			packageProductDependencies = (
 			);
 			productName = "Event Countdown";
-			productReference = 90EE63582CB2DABE00BC0E9E /* Event Countdown.app */;
+			productReference = 90EE63582CB2DABE00BC0E9E /* EventCountdown.app */;
 			productType = "com.apple.product-type.application";
 		};
-		90EE63672CB2DABF00BC0E9E /* Event CountdownTests */ = {
+		90EE63672CB2DABF00BC0E9E /* EventCountdownTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 90EE637F2CB2DABF00BC0E9E /* Build configuration list for PBXNativeTarget "Event CountdownTests" */;
+			buildConfigurationList = 90EE637F2CB2DABF00BC0E9E /* Build configuration list for PBXNativeTarget "EventCountdownTests" */;
 			buildPhases = (
 				90EE63642CB2DABF00BC0E9E /* Sources */,
 				90EE63652CB2DABF00BC0E9E /* Frameworks */,
@@ -118,16 +118,16 @@
 			dependencies = (
 				90EE636A2CB2DABF00BC0E9E /* PBXTargetDependency */,
 			);
-			name = "Event CountdownTests";
+			name = EventCountdownTests;
 			packageProductDependencies = (
 			);
 			productName = "Event CountdownTests";
-			productReference = 90EE63682CB2DABF00BC0E9E /* Event CountdownTests.xctest */;
+			productReference = 90EE63682CB2DABF00BC0E9E /* EventCountdownTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		90EE63712CB2DABF00BC0E9E /* Event CountdownUITests */ = {
+		90EE63712CB2DABF00BC0E9E /* EventCountdownUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 90EE63822CB2DABF00BC0E9E /* Build configuration list for PBXNativeTarget "Event CountdownUITests" */;
+			buildConfigurationList = 90EE63822CB2DABF00BC0E9E /* Build configuration list for PBXNativeTarget "EventCountdownUITests" */;
 			buildPhases = (
 				90EE636E2CB2DABF00BC0E9E /* Sources */,
 				90EE636F2CB2DABF00BC0E9E /* Frameworks */,
@@ -138,11 +138,11 @@
 			dependencies = (
 				90EE63742CB2DABF00BC0E9E /* PBXTargetDependency */,
 			);
-			name = "Event CountdownUITests";
+			name = EventCountdownUITests;
 			packageProductDependencies = (
 			);
 			productName = "Event CountdownUITests";
-			productReference = 90EE63722CB2DABF00BC0E9E /* Event CountdownUITests.xctest */;
+			productReference = 90EE63722CB2DABF00BC0E9E /* EventCountdownUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -168,7 +168,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 90EE63532CB2DABE00BC0E9E /* Build configuration list for PBXProject "Event Countdown" */;
+			buildConfigurationList = 90EE63532CB2DABE00BC0E9E /* Build configuration list for PBXProject "EventCountdown" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -182,9 +182,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				90EE63572CB2DABE00BC0E9E /* Event Countdown */,
-				90EE63672CB2DABF00BC0E9E /* Event CountdownTests */,
-				90EE63712CB2DABF00BC0E9E /* Event CountdownUITests */,
+				90EE63572CB2DABE00BC0E9E /* EventCountdown */,
+				90EE63672CB2DABF00BC0E9E /* EventCountdownTests */,
+				90EE63712CB2DABF00BC0E9E /* EventCountdownUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -240,12 +240,12 @@
 /* Begin PBXTargetDependency section */
 		90EE636A2CB2DABF00BC0E9E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 90EE63572CB2DABE00BC0E9E /* Event Countdown */;
+			target = 90EE63572CB2DABE00BC0E9E /* EventCountdown */;
 			targetProxy = 90EE63692CB2DABF00BC0E9E /* PBXContainerItemProxy */;
 		};
 		90EE63742CB2DABF00BC0E9E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 90EE63572CB2DABE00BC0E9E /* Event Countdown */;
+			target = 90EE63572CB2DABE00BC0E9E /* EventCountdown */;
 			targetProxy = 90EE63732CB2DABF00BC0E9E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -377,7 +377,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Event Countdown/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"EventCountdown/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -405,7 +405,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Event Countdown/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"EventCountdown/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -440,7 +440,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Event Countdown.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Event Countdown";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EventCountdown.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/EventCountdown";
 			};
 			name = Debug;
 		};
@@ -458,7 +458,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Event Countdown.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Event Countdown";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EventCountdown.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/EventCountdown";
 			};
 			name = Release;
 		};
@@ -497,7 +497,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		90EE63532CB2DABE00BC0E9E /* Build configuration list for PBXProject "Event Countdown" */ = {
+		90EE63532CB2DABE00BC0E9E /* Build configuration list for PBXProject "EventCountdown" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				90EE637A2CB2DABF00BC0E9E /* Debug */,
@@ -506,7 +506,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		90EE637C2CB2DABF00BC0E9E /* Build configuration list for PBXNativeTarget "Event Countdown" */ = {
+		90EE637C2CB2DABF00BC0E9E /* Build configuration list for PBXNativeTarget "EventCountdown" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				90EE637D2CB2DABF00BC0E9E /* Debug */,
@@ -515,7 +515,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		90EE637F2CB2DABF00BC0E9E /* Build configuration list for PBXNativeTarget "Event CountdownTests" */ = {
+		90EE637F2CB2DABF00BC0E9E /* Build configuration list for PBXNativeTarget "EventCountdownTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				90EE63802CB2DABF00BC0E9E /* Debug */,
@@ -524,7 +524,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		90EE63822CB2DABF00BC0E9E /* Build configuration list for PBXNativeTarget "Event CountdownUITests" */ = {
+		90EE63822CB2DABF00BC0E9E /* Build configuration list for PBXNativeTarget "EventCountdownUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				90EE63832CB2DABF00BC0E9E /* Debug */,
