@@ -44,10 +44,11 @@ struct EventForm: View {
         }
         .navigationTitle(mode == .add ? "Add Event" : "Edit \(eventTitle)")
         .toolbar {
-
             ToolbarItem(placement: .navigationBarLeading) {
-                Button("Cancel") {
-                    isPresentingForm = false
+                if isPresentingForm {
+                    Button("Cancel") {
+                        isPresentingForm = false
+                    }
                 }
             }
             
